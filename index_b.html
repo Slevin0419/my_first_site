@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" type="text/css" href="CSS/style.css">
+    <link rel = "shortcut icon" type="image/jpg" href="images/favicon.jpg">
+    <title>bootstrap</title>
+</head>
+<body>
+    <header id="header">
+        <div class="block_1">
+                <img src="images/logo.png" alt="Логотип" width="70">
+            <p class="group">Группа ЭФБО-02-23
+                <br>
+                <br>
+                Ашхотов Идар Иналович
+            </p>
+        </div>
+        <ul class="nav nav-tabs nav-justified" id = "navbar">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Главная</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Семестровый план</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="term_1.html">Первый семестр</a></li>
+                <li><a class="dropdown-item disabled" aria-disabled="true">Второй семестр</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Авторизация</a>
+            </li>
+        </ul>
+    </header>
+    <div class="main">
+        <div class="block_2">
+            <ul class="nav_2">
+                <li>Навигация по странице</li>
+                <li><a href="#front">Фронтенд</a></li>
+                <li><a href="#back">Бэкенд</a></li>
+                <li><a href="#bootstrap">Bootstrap</a></li>
+            </ul>
+        </div>
+        <div class="block_3">
+            <main>
+                <h1>Добро пожаловать на мой сайт</h1>
+                <div class="myname">
+                    <div>
+                        <p style="width: 80%;" class="description">Меня зовут Ашхотов Идар Иналович и я начинающий специалист по веб-разработке</p>
+                    </div>
+                    <div>
+                        <img src="images/myphoto.png" alt="портрет" width="120" id="student-photo">
+                    </div>
+                </div>
+                <div style="border: none;">
+                    <h3 id="front">Фронтенд</h3>
+                    <p class="front">Фронтенд (англ. frontend) — это разработка пользовательских функций и интерфейса. К ним относится всё, что пользователи видят на сайте или в приложении, и с чем можно взаимодействовать: картинки, выпадающие списки, меню, анимация, карточки товаров, кнопки, чекбоксы, интерактивные элементы.</p>
+                    <div class="video"><video src="video.mp4" type="video/mp4" controls></video></div>
+                </div>
+                <div style="border: none;">
+                    <h3 id="back">Бэкенд</h3>
+                    <p class="front">Бэкенд (англ. backend) — это логика работы сайта, скрытая от пользователя. Именно там происходит то, что можно назвать работой сайта.</p>
+                    <div class="video"><video src="video.mp4" type="video/mp4" controls></video></div>
+                </div>
+                
+            </main>
+            <h3 id="bootstrap">Знакомтсво с bootstrap</h3>
+            <h4 class="bs">Аккордеон</h4>
+            <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            <h4 class="bs">Слайдер</h4>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://www.rial-tour.ru/images/stories/virtuemart/product/gallery_big_goryachie_istochniki_dily_su_gornyy_lager_47_900x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://photocentra.ru/images/main51/517893_main.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://balthazar.club/o/uploads/posts/2024-01/1705002593_balthazar-club-p-gori-kabardino-balkarii-krasivo-61.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container d-flex flex align-items-center justify-content-center position-relative" style="height: 80px;">
+            <div class="text-center">
+                <span>&copy; Ашхотов Идар Иналович, 2024</span>
+            </div>
+                <div class="social-icons mx-1 position-absolute top-50 end-0 translate-middle-y">
+                    <a href="#"><img src="images/whats-transformed.png" alt="ссылка на whatsapp" width="25"></a>
+                    <a href="#"><img src="images/vk.png" alt="ссылка на вк" width="25"></a>
+                </div>
+                    
+        </div>
+    </footer>
+    <div class="scroll"><a href="#header">&#9650;</a></div>
+    <script src="nav.js"></script>
+    <script src="animation.js"></script>
+</body>
+</html>
